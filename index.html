@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting Website</title>
+</head>
+<body bgcolor = "lightgrey">
+    <h2 align = "center"><b>Weather Forecast</b></h2>
+    <br><br>
+    <h4>Location: <input type = "text" id = "Location" placeholder = "Enter the location or zip code"></h4>
+    <p><button onClick = "searchWeather()">Submit</button></p>
+    <p>
+        Temperature: <small><span id = "temperature"></span><sup>o</sup>C</small>
+        <br>
+        Humidity: <small></small> 
+        <br>
+        Wind Speed: <small><span id = "windspeed"></span>km/h</small>
+        <br>
+        Visibility: <small><span id = "visibility"></span>km</small>
+    </p>
+    <br>
+    <table bgcolor = "black">
+        <tr bgcolor = "grey" align = "center" width = "500">
+            <th width = "80">Day/Weather</th>
+            <th width = "80">Monday</th>
+            <th width = "80">Tuesday</th>
+            <th width = "80">Wednesday</th>
+            <th width = "80">Thursday</th>
+            <th width = "80">Friday</th>
+            <th width = "80">Saturday</th>
+            <th width = "80">Sunday</th>
+        </tr>
+        <tr bgcolor = "grey" align = "center">
+            <th>Temperature</th>
+            <th bgcolor = "darkgrey"><span id = "mon_temp"></span><sup>o</sup>C</th>
+            <th bgcolor = "darkgrey"><span id = "tues_temp"></span><sup>o</sup>C</th>
+            <th bgcolor = "darkgrey"><span id = "wed_temp"></span><sup>o</sup>C</th>
+            <th bgcolor = "darkgrey"><span id = "thurs_temp"></span><sup>o</sup>C</th>
+            <th bgcolor = "darkgrey"><span id = "fri_temp"></span><sup>o</sup>C</th>
+            <th bgcolor = "darkgrey"><span id = "sat_temp"></span><sup>o</sup>C</th>
+            <th bgcolor = "darkgrey"><span id = "sun_temp"></span><sup>o</sup>C</th>
+        </tr>
+        <tr bgcolor = "grey" align = "center">
+            <th>Description</th>
+            <th bgcolor = "darkgrey"><span id = "mon_des"></span></th>
+            <th bgcolor = "darkgrey"><span id = "tues_des"></span></th>
+            <th bgcolor = "darkgrey"><span id = "wed_des"></span></th>
+            <th bgcolor = "darkgrey"><span id = "thurs_des"></span></th>
+            <th bgcolor = "darkgrey"><span id = "fri_des"></span></th>
+            <th bgcolor = "darkgrey"><span id = "sat_des"></span></th>
+            <th bgcolor = "darkgrey"><span id = "sun_des"></span></th>
+        </tr>
+    </table>
+</body>
+</html>
